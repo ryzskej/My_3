@@ -1,0 +1,395 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/********** reusable **********/
+
+.empty-space{
+    height: 45px;
+}
+
+.row {
+    max-width: 960px;
+	margin: 0 auto;
+}
+
+#logo img {
+    height: 35px;
+    position: absolute;
+    top: 2px;
+}
+
+/********** MENU **********/
+/*
+nav ul {
+	width: 900px;
+	margin: 0 auto;
+}
+*/
+
+.nav-background {
+    width: 100%;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.65);
+    position: fixed;
+    z-index: 50;
+    border-bottom: 1px solid #fff;
+}
+
+nav ul {
+    float: right;
+    position: fixed;
+    z-index: 100;
+}
+
+nav ul li {
+    display:inline-block;
+	list-style-type: none;
+	width: 145px;
+	text-align: center;
+	line-height: 40px;
+    transition: line-height 1s;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    transition: border-bottom 0.7s;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+	border-bottom: 1px solid white;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.mobile-nav-icon {
+    display: none;
+}
+
+/********** POZADÍ STRÁNKY **********/
+body header {
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("img/my33.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+/* Tohle bylo k posunutí obrázku o 74% nahoru => background-position: 0 -74%;*/
+}
+
+.header-text {
+    position: absolute;
+    top: 40%;
+    left: 51%;
+    transform: translate(-50%, 1%);
+    text-align: center;
+}
+
+.header-text h1 {
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    word-spacing: 1.1px;
+    font-weight: 700;
+}
+
+.btn {
+    transition: background 1s;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(161, 50, 40, 0.7);
+    padding: 10px 20px;
+    margin: 5px 15px;
+    border-radius: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.btn:hover {
+/*
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+*/
+    background: #f75959;
+/*
+    padding: 10px 20px;
+    margin: 5px 15px;
+    border-radius: 30px;
+    font-size: 25px;
+    font-weight: bold;
+*/
+}
+
+.header-main h2{
+    text-align: center;
+    /* margin-top: 30px; */
+    font-size: 32px;
+}
+
+.header-main h2:after {
+    content: "";
+    display: block;
+    width: 15%;
+    border-bottom: 2px solid red;
+    margin: 5px auto;
+}
+
+/*******  ABOUT US *******/
+
+.citat p {
+    position: relative;
+    top: 70px;
+}
+
+.citat-text {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.one-person {
+    padding: 15px;
+}
+
+.one-person p {
+    font-size: 18px;
+}
+
+.one-person-class img {
+    width: 100%;
+    box-shadow: 5px 5px 15px grey;
+    transform: scale(1.15);
+    transition: transform 1s, opacity 1s;
+    /* opacity: 0.7; */
+}
+
+.one-person-class img:hover {
+    transform: scale(1);
+    /* opacity: 1; */
+}
+
+.preteceni {
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.our-vision img {
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 3px 3px 10px grey;
+}
+
+.our-vision-text {
+    margin-bottom: 15px;
+}
+
+.our-vision-text div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    text-align: center;
+    padding: 11px;
+    margin-right: 10px;
+    float: left;
+}
+
+/****** REFERENCES ******/
+
+
+
+.references {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("img/my3kostel.jpg");
+    background-attachment: fixed;
+}
+
+.references h2 {
+    /* padding-top: 30px; */
+    color: #fff;
+    font-size: 30px;
+}
+
+.three-references{
+    text-align: center;
+}
+
+.three-references p {
+    color: #fff;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.three-references img {
+    max-width: 150px;
+    border-radius: 50%;
+    padding: 15px 0;
+}
+
+/****** FOTOGALERIE ******/
+
+/* .photogallery h2 {
+    padding-top: 30px;
+} */
+
+.gallery-one-segment li {
+    background: #000;
+    overflow: hidden;
+    height: 300px;
+}
+
+.gallery-one-segment img {
+    width: 98%;
+    opacity: 0.6;
+    transform: scale(1.15);
+    transition: transform 1s, opacity 1s;
+    height: 300px;
+}
+
+.gallery-one-segment img:hover {
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 0.8s;
+}
+
+.video-view {
+    width: 100%;
+    text-align: center;
+}
+
+.one-video {
+    margin: 20px;
+}
+
+/****** KONTAKTNÍ STRÁNKA ******/
+
+.contact-form {
+    max-width: 600px;
+    text-align: center;
+}
+
+.contact-form input {
+    width: 80%;
+    margin: 5px 0;
+    padding: 7px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.contact-form input[type=submit] {
+    background: rgba(161, 50, 40, 0.7);
+    font-size: 20px;
+    transition: background .8s, color .8s, font-weight .7s;
+}
+
+.contact-form input[type=submit]:hover {
+    background: rgba(21, 196, 14, 0.89);
+    color: #fff;
+    font-weight: bold;
+}
+
+.contact-form textarea {
+    width: 80%;
+    margin: 5px 0;
+    padding: 7px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+    font-family: Arial;
+}
+
+/* TŘÍDY K PHP */ 
+.form-result{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.success {
+    background-color: #239b28;
+}
+
+.error {
+   background-color: #a01b30; 
+}
+
+
+/****** FOOTER ******/
+
+.footer-page {
+    background: #332626;
+    margin-top: 30px;
+}
+
+.footer-page a, 
+.footer-text {
+    color: #fff;
+}
+
+.social-media {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.social-media p {
+    display: inline;
+    margin-right: 20px;
+}
+
+.social-media img {
+    width: 45px;
+}
+
+.social-media a:link,
+.social-media a:visited {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-media a:hover, 
+.social-media a:active {
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.footer-text {
+    text-align: center;
+    margin: 10px;
+}
+
+
+/* NOVÁ VERZE JE PŘEDPŘIPRAVNÝ LIGHTBOX */
+
+
+/****** STOP FLOATING ******/
+.clearfix {zoom:1}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+
+
+
+

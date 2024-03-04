@@ -1,0 +1,164 @@
+@media only screen and (max-width: 700px){
+
+    nav ul li a:link,
+    nav ul li a:visited {
+        border-bottom: 0px solid transparent;
+}
+
+    nav ul li a:hover,
+    nav ul li a:active {
+	    border-bottom: 0px solid white;
+}
+
+    .btn {
+        display: block;
+    } 
+    
+/*
+    .btn:hover {
+        display: block;
+    }
+    
+*/
+    .header-text {
+        width: 95%;
+    }
+    
+    .one-person-class:nth-child(2) {
+        display: none;
+    }    
+    
+    .one-person-class {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .one-person-class .preteceni {
+        margin-bottom: 10px;
+    }
+    
+    .gallery-one-segment {
+        margin: 20px;
+    }
+    
+    .gallery-one-segment .col{
+        width: 100%;
+    }
+    
+    .gallery-one-segmen .one-picture {
+        width:100%;
+        height: auto;
+    }
+
+    .photogallery .col{
+        margin-left: 0px;
+    }
+    
+    .gallery-one-segment img {
+        opacity: 1;
+        transform: scale(1)
+    }
+
+    .video-view iframe {
+        width: 330px;
+        height: 188px;
+    }
+    
+}
+
+@media only screen and (max-width: 910px){
+    
+    /* MOBILE NAVIGATION */
+    .mobile-nav-icon {
+        display: inline-block;
+        z-index: 110;
+        position: fixed;
+        top: 0.25%;
+        right: 0.5%;
+    }
+
+    .mobile-nav-back {
+        background: rgba(0,0,0, 0.65);
+        position: fixed;
+        height: 255px;
+        width: 100%;
+        display: none;
+        border-bottom: 1px solid #fff;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-left: 30px;
+        display: none;
+    }
+
+    /* hoverovat asi nemusím, na telefonu to ani nejde */
+    /* nav ul li:hover {
+        background: rgba(0, 0, 0, 0.4);
+        display: block; 
+    } */
+
+    /* .nav-background {
+        display: none;
+    } */
+
+    header .header-text-none {
+        display: none;
+    }
+
+    .header-text {
+        top: 67%;
+    }
+
+}
+
+@media only screen and (max-width: 990px){
+    
+/*
+    nav ul li {
+        display:block;
+    }
+*/
+    
+/*
+    .header-text {
+        top: 63%;
+    }
+    
+*/
+/*
+    nav ul {
+    float: center;
+    }
+*/
+    
+    .one-reference {
+        margin-top: 50px;
+        width: 94%;
+    }
+    
+     .gallery-one-segment{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .gallery-one-segment li{
+        width: 46%;
+        height: auto;
+    }
+    
+    .photogallery .col{
+        margin: 1%;
+    }
+    
+    .three-references p {
+        margin-right: 20px;
+    }
+    
+}
