@@ -154,7 +154,7 @@
                     </div>
                 </div>
                 <div class="col span-1-of-3 one-reference">
-                    <p>Prvotřídní taneční kreace. Jde vidět, že dámy už získali po celém světě plno zkušeností, medailí a ocenění. Souhra hraje na pět hvězdiček, ladné kroky, skvělá synchronizace, překvapivé vytáčky, vymazlená hudba. O našem mysliveckém plese se bude ještě dlouho vyprávět. 
+                    <p>Prvotřídní taneční kreace. Jde vidět, že dámy už získali po celém světě plno zkušeností, medailí a ocenění. Souhra hraje na pět hvězdiček, ladné kroky, skvělá synchronizace, překvapivé vytáčky, vymazlená hudba. O našem mysliveckém plese se bude ještě dlouho vyprávět. A dám si pívo. 
                     </p>
                     <div class="image-text">
                         <img src="img/dusek.JPG" rel="neco">
